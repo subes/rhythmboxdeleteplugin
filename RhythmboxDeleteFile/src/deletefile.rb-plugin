@@ -1,0 +1,9 @@
+[RB Plugin]
+Loader=python
+Module=deletefile
+IAge=1
+Name=Delete current song from harddisk
+Description=Deletes the current song when Mod4+Up is pressed.
+Authors=gsubes@gmail.com
+Copyright=Copyright © 2009 subes
+Website=https://sourceforge.net/users/subes
