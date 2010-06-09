@@ -4,7 +4,8 @@ No need to go through new music and filter the things you like.
 Just delete the ugly stuff when you encounter it the first time. :)
 
 Install:
-1. Copy this directory into ~/.gnome2/rhythmbox/plugins
+1. Install python-xlib
+2. Copy this directory into ~/.gnome2/rhythmbox/plugins
 
 Structure should then look like this:
 
@@ -13,8 +14,8 @@ Structure should then look like this:
         deletefile.rb-plugin
         __init__.py
         
-2. Restart Rhythmbox
-3. Go to Edit -> Plugins -> enable "Delete current song from harddisk"
+3. Restart Rhythmbox
+4. Go to Edit -> Plugins -> enable "Delete current song from harddisk"
 
 Usage:
 1. If you ever find song disgusting, hit Mod4+Up (Mod4 == WindowsKey) and it will get deleted (moved to trash bin).
