@@ -4,7 +4,10 @@ No need to go through new music and filter the things you like.
 Just delete the ugly stuff when you encounter it the first time. :)
 
 Install:
-1. Install python-xlib
+1. Install the following packages (names taken from Ubuntu):
+     - python-xlib (python module)
+     - trash-cli (tash command)
+     - libnotify-bin (notify-send command)
 2. Copy this directory into ~/.gnome2/rhythmbox/plugins
 
 Structure should then look like this:
