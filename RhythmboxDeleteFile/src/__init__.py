@@ -11,6 +11,7 @@ import Xlib.display
 import gobject
 import gtk
 import glib
+import urllib
 
 # TODO:
 #   - allow hotkey to be configured via gconf
@@ -95,8 +96,8 @@ class DeleteFilePlugin (rb.Plugin):
     # deletes the current playing file
     def delete(self):
         file = self.shell.props.shell_player.get_playing_path()
-        file = file.replace("%20", " ")
         file = file.replace("file://", "")
+        file = urllib.unquote(file)
         if(isinstance(file, str)):
             filename = file.rpartition("/")[2]
             
