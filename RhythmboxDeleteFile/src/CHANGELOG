@@ -1,3 +1,6 @@
+0.0.3
+- fixed deletion of files with an ['] in their name
+
 0.0.2
 - fixed url unencoding of file names
 
