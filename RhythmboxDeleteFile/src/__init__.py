@@ -111,7 +111,7 @@ class DeleteFilePlugin (rb.Plugin):
                 None
 
             recoversh = "/tmp/"+filename+".sh"
-            os.system("echo \"mv \\\""+filename+"\\\" \\\""+file+"\\\" && rm \\\"\$0\\\"\" > \""+recoversh+"\"")
+            os.system("echo \"mv \\\""+filename.replace("\\$", "\\\\$")+"\\\" \\\""+file.replace("\\$", "\\\\$")+"\\\" && rm \\\"\$0\\\"\" > \""+recoversh+"\"")
             os.system("chmod +x \""+recoversh+"\"")
 
             os.system("trash \""+file+"\" \""+recoversh+"\"")
