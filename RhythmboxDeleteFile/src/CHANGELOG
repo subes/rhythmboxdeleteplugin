@@ -1,3 +1,6 @@
+0.0.4
+- delimiting $ now
+
 0.0.3
 - fixed deletion of files with an ['] in their name
 
