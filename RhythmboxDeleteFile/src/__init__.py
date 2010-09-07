@@ -99,7 +99,7 @@ class DeleteFilePlugin (rb.Plugin):
         file = file.replace("file://", "")
         file = urllib.unquote(file)
         file = file.replace("\"", "\\\"")
-        file = file.replace("$", "\\$"")
+        file = file.replace("$", "\\$")
         if(isinstance(file, str)):
             filename = file.rpartition("/")[2]
             
