@@ -110,9 +110,5 @@ class DeleteFilePlugin (rb.Plugin):
             except glib.GError:
                 None
 
-            recoversh = "/tmp/"+filename+".sh"
-            os.system("echo \"mv \\\""+filename.replace("\\$", "\\\\$")+"\\\" \\\""+file.replace("\\$", "\\\\$")+"\\\" && rm \\\"\$0\\\"\" > \""+recoversh+"\"")
-            os.system("chmod +x \""+recoversh+"\"")
-
-            os.system("trash \""+file+"\" \""+recoversh+"\"")
+            os.system("trash \""+file+"\"")
             

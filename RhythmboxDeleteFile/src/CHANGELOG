@@ -1,3 +1,6 @@
+0.0.5
+- recoversh not needed anymore on gnome 2.32 because trash bin can recover now
+
 0.0.4
 - delimiting $ now
 

@@ -21,11 +21,7 @@ Structure should then look like this:
 4. Go to Edit -> Plugins -> enable "Delete current song from harddisk"
 
 Usage:
-1. If you ever find song disgusting, hit Mod4+Up (Mod4 == WindowsKey) and it will get deleted (moved to trash bin).
-2. Handle the trash.
-    a) Restore song by taking the <SONGFILE> and <SONGFILE>.sh from the trash bin 
-        and executing <SONGFILE>.sh, which will move <SONGFILE> back to where it was deleted from.
-    b) Just empty trash bin say byebye to the disgusting song.
+If you ever find song disgusting, hit Mod4+Up (Mod4 == WindowsKey) and it will get deleted (moved to trash bin).
     
 Configuring:
 To change the hotkey, run xbindkeys -k (install xbindkeys first) and set the relevant keysyms in __init__.py.
