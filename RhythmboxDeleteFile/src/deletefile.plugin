@@ -1,7 +1,7 @@
-[RB Plugin]
+[Plugin]
 Loader=python
 Module=deletefile
-IAge=1
+IAge=2
 Name=Delete current song from harddisk
 Description=Deletes the current song when Mod4+Up is pressed.
 Authors=gsubes@gmail.com

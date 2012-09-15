@@ -1,3 +1,14 @@
+0.0.6
+- Migrating to dynamic bindings for GObject, Rhythmbox and other libraries.
+- Changing the module name
+- No need for trash-cli or notify-bin packages
+- Pylint fixes
+- Changing the default key combination from Mod4+Up to Ctrl+/
+    - because using Mod4 (WindowsKey) in some configurations conflicts with the
+      existing key bindings.
+- Changing how we obtain the currently playing song's file path
+    - Using standard modules to convert the URI to system path.
+
 0.0.5
 - recoversh not needed anymore on gnome 2.32 because trash bin can recover now
 
