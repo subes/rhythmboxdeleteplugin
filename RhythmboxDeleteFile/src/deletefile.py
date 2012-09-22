@@ -37,8 +37,8 @@ class DeleteFilePlugin(GObject.Object, Peas.Activatable):
     __gtype_name__ = 'DeleteCurrentFilePlugin'
     object = GObject.property(type=GObject.Object)
 
-    # Ctrl+'/'
-    delete_key = 61
+    # Ctrl+'.'
+    delete_key = 60
     delete_mask = 0x14
 
     numlock_mask = 0x10
