@@ -21,12 +21,12 @@
 
 import Xlib.X
 from gi.repository import GObject, RB, Peas, GLib, Gdk, Notify
-from urlparse import urlparse
+from urllib.parse import urlparse
 from send2trash import send2trash
 import os
 import Xlib
 import Xlib.display
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 # TODO:
 #   - allow hotkey to be configured via gconf
@@ -39,7 +39,7 @@ class DeleteFilePlugin(GObject.Object, Peas.Activatable):
 
     # Ctrl+'.'
     delete_key = 60
-    delete_mask = 0x14
+    delete_mask = 0x4
 
     numlock_mask = 0x10
     capslock_mask = 0x2
@@ -127,7 +127,7 @@ class DeleteFilePlugin(GObject.Object, Peas.Activatable):
         if uri.scheme != 'file':
             return
 
-        fPath = urllib.unquote(uri.path)
+        fPath = urllib.parse.unquote(uri.path)
         notification = Notify.Notification.new('Rhythmbox',
                 os.path.basename(fPath),
                 'user-trash-full')

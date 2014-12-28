@@ -5,10 +5,10 @@ stuff when you encounter it the first time. :)
 
 Install:
 1. Install the following packages (names taken from Ubuntu):
-     - python-xlib (python module)
+     - python3-xlib (python module)
      - send2trash (available from pypi)
      In Ubuntu, you can execute the following command:
-     sudo apt-get install python-pip python-xlib && sudo pip install send2trash
+     sudo apt-get install python3-pip python3-xlib && sudo pip3 install send2trash
 2. Copy this directory into ~/.local/share/rhythmbox/plugins
 
 Structure should then look like this:
