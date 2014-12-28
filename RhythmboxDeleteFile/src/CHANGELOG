@@ -1,3 +1,6 @@
+0.0.8
+- Plugin is compatible with Ubuntu 14.04 LTS.
+
 0.0.7
 - Changing the key combination to Ctrl+period because Ctrl+'/' is taken by
   rhythmbox
